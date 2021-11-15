@@ -29,7 +29,6 @@ import WalletMonitoring from '../services/walletMonitoring';
 import AaveChannel from '../showrunners-sdk/aaveChannel';
 import TruefiChannel from '../showrunners-sdk/truefiChannel';
 import Uniswap from '../showrunners-sdk/uniSwapChannel';
-import MyFirstEPNSChannel from '../showrunners-sdk/myFirstEPNSChannel';
 
 
 export default ({ logger }) => {
@@ -230,22 +229,6 @@ export default ({ logger }) => {
   // 1.10 TrueFI CHANNEL
   schedule.scheduleJob({ start: startTime, rule: dailyRule }, async function () {
     logger.info('-- 🛵 Scheduling Showrunner - Everest Channel [on 24 Hours]');
-    const truefiTicker = Container.get(TruefiChannel);
-    const taskName = 'Truefi event checks and sendMessageToContract()';
-
-    try {
-      await truefiTicker.sendMessageToContract(false);
-      logger.info(`🐣 Cron Task Completed -- ${taskName}`);
-    }
-    catch (err) {
-      logger.error(`❌ Cron Task Failed -- ${taskName}`);
-      logger.error(`Error Object: %o`, err);
-    }
-  });
-
-  // MyFirstEPNSChannel
-  schedule.scheduleJob({ start: startTime, rule: dailyRule }, async function () {
-    logger.info('-- 🛵 Scheduling Showrunner - Everest Channel [on 10 minutes]');
     const truefiTicker = Container.get(TruefiChannel);
     const taskName = 'Truefi event checks and sendMessageToContract()';
 
