@@ -39,7 +39,7 @@ export default () => {
 	// aave(app);
 
 	btcTicker_sdk(app);
-	ethTicker_sdk(app);	
+	ethTicker_sdk(app);
 	gasPrice_sdk(app);
 	wallet_tracker_sdk(app);
 	truefi_sdk(app);

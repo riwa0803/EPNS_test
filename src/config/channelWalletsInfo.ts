@@ -45,7 +45,7 @@ const wallets = [
             riktestchannelPrivateKey_1: process.env.RIK_TEST_CHANNEL_KEY
         }
 ]
-    
+
 const walletsKV = wallets.reduce((initial, value) => {
     Object.keys(value).map(key => initial[key] = value[key])
     return initial;
