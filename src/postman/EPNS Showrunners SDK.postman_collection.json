@@ -1406,10 +1406,10 @@
 			]
 		},
 		{
-			"name": "My First EPNS Channel",
+			"name": "riktestchannel",
 			"item": [
 				{
-					"name": "myFirstEPNSChannel/send_message",
+					"name": "riktestchannel/send_message",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -1423,7 +1423,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5432/apis/showrunners-sdk/uniswap/send_message",
+							"raw": "localhost:5432/apis/showrunners-sdk/riktestchannel/send_message",
 							"host": [
 								"localhost"
 							],
@@ -1431,7 +1431,7 @@
 							"path": [
 								"apis",
 								"showrunners-sdk",
-								"uniswap",
+								"riktestchannel",
 								"send_message"
 							]
 						}
@@ -1453,7 +1453,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:5432/apis/showrunners/uniswap/check_for_new_proposal",
+							"raw": "localhost:5432/apis/showrunners/riktestchannel/check_for_new_proposal",
 							"host": [
 								"localhost"
 							],
@@ -1461,7 +1461,7 @@
 							"path": [
 								"apis",
 								"showrunners",
-								"uniswap",
+								"riktestchannel",
 								"check_for_new_proposal"
 							]
 						}
@@ -1491,7 +1491,7 @@
 							"path": [
 								"apis",
 								"showrunners",
-								"uniswap",
+								"riktestchannel",
 								"get_proposal_payload"
 							]
 						}

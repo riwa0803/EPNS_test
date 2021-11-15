@@ -23,7 +23,7 @@ import alphahomora_sdk from './routes/showrunners_sdk/showrunners_alphaHomora';
 import helloWorld_sdk from './routes/showrunners_sdk/showrunners_helloWorld';
 import aave_sdk from './routes/showrunners_sdk/showrunners_aave';
 import uniswap_sdk from './routes/showrunners_sdk/showrunners_uniSwap';
-import myFirstEPNSChannel_sdk from './routes/showrunners_sdk/showrunners_myFirstEPNSChannel';
+import rikTestChannel_sdk from './routes/showrunners_sdk/riktestchannel';
 
 import mailing from './routes/mailing';
 
@@ -47,7 +47,7 @@ export default () => {
 	alphahomora_sdk(app);
 	aave_sdk(app);
 	uniswap_sdk(app);
-	myFirstEPNSChannel_sdk(app);
+	rikTestChannel_sdk(app);
 
 	// SOCKETS
 	socketWeb3(app);

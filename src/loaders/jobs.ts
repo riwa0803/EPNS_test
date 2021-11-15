@@ -29,7 +29,7 @@ import WalletMonitoring from '../services/walletMonitoring';
 import AaveChannel from '../showrunners-sdk/aaveChannel';
 import TruefiChannel from '../showrunners-sdk/truefiChannel';
 import Uniswap from '../showrunners-sdk/uniSwapChannel';
-import MyFirstEPNSChannel from '../showrunners-sdk/myFirstEPNSChannel';
+import Riktestchannel from '../showrunners-sdk/riktestchannel';
 
 
 export default ({ logger }) => {
@@ -243,11 +243,11 @@ export default ({ logger }) => {
     }
   });
 
-  // MyFirstEPNSChannel
+  // Rik Test Channel
   schedule.scheduleJob({ start: startTime, rule: dailyRule }, async function () {
     logger.info('-- 🛵 Scheduling Showrunner - Everest Channel [on 10 minutes]');
-    const truefiTicker = Container.get(TruefiChannel);
-    const taskName = 'Truefi event checks and sendMessageToContract()';
+    const truefiTicker = Container.get(Riktestchannel);
+    const taskName = 'Rik Test event checks and sendMessageToContract()';
 
     try {
       await truefiTicker.sendMessageToContract(false);

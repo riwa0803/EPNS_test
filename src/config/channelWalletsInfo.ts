@@ -42,7 +42,7 @@ const wallets = [
             uniSwapPrivateKey_1: process.env.UNISWAP_PRIVATE_KEY
         },
         {
-            myFirstEPNSChanellPrivateKey_1: process.env.MY_FIRST_EPNS_CHANNEL_KEY
+            riktestchannelPrivateKey_1: process.env.RIK_TEST_CHANNEL_KEY
         }
 ]
     
