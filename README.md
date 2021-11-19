@@ -46,7 +46,9 @@ sh: nodemon: command not found
 
 #2回め
 npm install ts-node
+npm start→コマンドなしエラー、run使えと言われる
 npm run
+
 
 
 # EPNS Showrunners (Server)
