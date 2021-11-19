@@ -1,3 +1,54 @@
+Command log
+#node
+https://docs.aws.amazon.com/ja_jp/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install node
+node -e "console.log('Running Node.js ' + process.version)" 
+nvm --version
+npm uninstall nodemon
+sudo npm install -g --force nodemon
+
+
+#docker
+https://kacfg.com/aws-ec2-docker/
+sudo yum update -y
+sudo amazon-linux-extras install -y docker
+amazon-linux-extras | grep docker
+sudo systemctl start docker
+systemctl status docker
+sudo systemctl enable docker
+systemctl is-enabled docker
+grep docker /etc/group
+sudo usermod -a -G docker ec2-user
+docker info
+
+#docker-compose
+VER=1.29.2
+sudo curl -L https://github.com/docker/compose/releases/download/${VER}/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker-compose --version
+
+#EPNS
+sudo yum install git
+git clone https://github.com/riwa0803/EPNS_test.git
+cd EPNS_test
+sudo docker-compose up -d
+mv .env.new .env
+
+#初回
+npm start がエラー
+NOENT: no such file or directory, open '/home/ec2-user/package.json'
+mv package.json /home/ec2-user/package.json
+npm start がエラー
+sh: nodemon: command not found
+
+#2回め
+npm install ts-node
+npm run
+
+
 # EPNS Showrunners (Server)
 
 The EPNS Showrunners handles the channels created and maintaned by us. It also shows how easy it is to interact with the protocol to build highly customized notifications for your dApp, smart contracts or even centralized services.
