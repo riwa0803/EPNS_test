@@ -6,8 +6,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 nvm install node
 node -e "console.log('Running Node.js ' + process.version)" 
 nvm --version
-npm uninstall nodemon
-sudo npm install -g --force nodemon
+
 
 
 #docker
@@ -43,12 +42,16 @@ NOENT: no such file or directory, open '/home/ec2-user/package.json'
 mv package.json /home/ec2-user/package.json
 npm start がエラー
 sh: nodemon: command not found
+npm uninstall nodemon
+sudo npm install -g --force nodemon
 
 #2回め
 npm install ts-node
 npm start→コマンドなしエラー、run使えと言われる
 npm run
 
+#3回め
+npm install reflect-metadata
 
 
 # EPNS Showrunners (Server)
