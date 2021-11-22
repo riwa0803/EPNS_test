@@ -38,7 +38,7 @@ sudo docker-compose up -d
 mv .env.new .env
 
 ここでNPM install?
-
+別タブを開く？
 
 npm start
 sh: nodemon: command not found
@@ -49,7 +49,7 @@ Error: Cannot find module 'reflect-metadata'
 npm install -g reflect-metadata
 crash
 npm install
-
+rm -rf node_modules/
 
 #初回
 npm start がエラー
