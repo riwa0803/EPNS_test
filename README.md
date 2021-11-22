@@ -4,7 +4,6 @@ https://docs.aws.amazon.com/ja_jp/sdk-for-javascript/v2/developer-guide/setting-
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 . ~/.nvm/nvm.sh
 nvm install node
-node -e "console.log('Running Node.js ' + process.version)" 
 nvm --version
 
 
@@ -20,6 +19,7 @@ sudo systemctl enable docker
 systemctl is-enabled docker
 grep docker /etc/group
 sudo usermod -a -G docker ec2-user
+reflesh
 docker info
 
 #docker-compose
@@ -31,10 +31,25 @@ docker-compose --version
 
 #EPNS
 sudo yum install git
+y
 git clone https://github.com/riwa0803/EPNS_test.git
 cd EPNS_test
 sudo docker-compose up -d
 mv .env.new .env
+
+ここでNPM install?
+
+
+npm start
+sh: nodemon: command not found
+npm install -g nodemon
+sh: ts-node: command not found
+npm install -g ts-node
+Error: Cannot find module 'reflect-metadata'
+npm install -g reflect-metadata
+crash
+npm install
+
 
 #初回
 npm start がエラー
