@@ -2,6 +2,7 @@ Command log
 #node
 https://docs.aws.amazon.com/ja_jp/sdk-for-javascript/v2/developer-guide/setting-up-node-on-ec2-instance.html
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+close and reopen
 . ~/.nvm/nvm.sh
 nvm install node
 nvm --version
@@ -35,6 +36,9 @@ y
 git clone https://github.com/riwa0803/EPNS_test.git
 cd EPNS_test
 sudo docker-compose up -d
+
+この段階でnpm installしてみている
+
 mv .env.new .env
 
 ここでNPM install?
