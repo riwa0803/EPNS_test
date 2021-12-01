@@ -36,13 +36,14 @@ y
 git clone https://github.com/riwa0803/EPNS_test.git
 cd EPNS_test
 sudo docker-compose up -d
-
-この段階でnpm installしてみている
-
 mv .env.new .env
+npm install
+npm start
+master wallet private key要求される
 
-ここでNPM install?
-別タブを開く？
+
+
+
 
 npm start
 sh: nodemon: command not found
