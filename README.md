@@ -39,7 +39,7 @@ sudo docker-compose up -d
 mv .env.new .env
 npm install
 npm start
-master wallet private key要求される
+master wallet private key要求される→コメントアウトできてない
 
 
 
